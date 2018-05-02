@@ -1,0 +1,14 @@
+{
+  "name": "vue-gouwu",
+  "version": "1.0.0",
+  "description": "**1-1 Vue基础知识介绍 (13:59)** ######课程介绍 - Vue基础知识介绍 - 购物车功能案例介绍 - 地址列表功能案例实现 - 课程总结",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.5.16"
+  }
+}
