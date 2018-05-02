@@ -25,16 +25,40 @@
 #####创建一个Vue实例
 **2-1 创建Vue实例 (15:27)**
 ######购物车案例课程安排
+ ```angular2html
 - 创建一个Vue的实例
 - 通过v-for指令渲染产品数据
 - 使用filter对金额和图片进行格式化
 - 使用v-on实现产品金额的动态计算
 - 综合演示
 
+  ***vue的生命周期***
+  
+   new Vue({
+          el:'#app',
+          data:{title:"Hello Vue"
+          },
+          filters:{
+  
+          },
+          mounted:function () {
+              this.cartView();
+          },
+          methods: {
+              cartView:function () {
+                  this.title="vue hello"
+              }
+          },
+      })
+      
+      //用mounted方法将默认的Hello vue修改为vue Hello
+```
+
 ###3章 使用v-for指令渲染商品列表
 #####教你如何使用v-for指令渲染商品列表
 **3-1 使用v-for指令渲染商品列表 (26:17)**
 ```$xslt
+使用v-for指令渲染产品数据
 
 ```
 ###4章 过滤器的使用
