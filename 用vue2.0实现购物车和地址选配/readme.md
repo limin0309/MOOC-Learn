@@ -42,7 +42,10 @@
   
           },
           mounted:function () {
-              this.cartView();
+              this.cartView();或者
+              this.$nextTick(function（）{
+              vm.cartView();
+              })
           },
           methods: {
               cartView:function () {
@@ -81,7 +84,13 @@
 #####实现地址列表的基本功能
 **6-1 地址列表过滤和展开所有功能实现 (21:45)**
 ```$xslt
-
+地址列表案例课程安排
+ 通过v-for指令渲染地址数据以及数组过滤
+ 地址卡片选择
+ 综合演示
+ 
+ 
+ 数组的常用方法:splice  slice   slice会返回一个全新的数组，跟原来的addressList没有任何的关系。splice会对原来的数组进行操作，整个原生的对象就会发生变化。
 ```
 **6-2 卡片选中、设置默认等功能实现 (15:34)**
 ```$xslt
@@ -90,5 +99,19 @@
 ###7章 课程总结
 **7-1 课程总结 (08:27)**
 ```$xslt
+课程总结
+. 学会如何创建一个Vue实例
+. 指令 v-model v-text v-show v-if v-bind v-for v-on
+. 过滤器的使用、computed使用
+. 结合指令和API
+. axios
 
+
+看到列表--应该想到v-for
+看到金额，货币转换，应该想到过滤器
+凡是看到表单，单选框，复选框，下拉框，只要是v-model的，我们应该想到双向数据绑定
+凡是看到+  -，删除，有操作的，我们应该想到v-on绑定事件
+有样式变化的，用v-bind动态操作
+v-for里面是可以套v-for的
+axios的使用
 ```
